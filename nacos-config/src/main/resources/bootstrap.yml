@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: nacos-demo
+  cloud:
+    nacos:
+       config:
+         file-extension: yml
+         refresh-enabled: true
+         shared-configs:
+           - dataId: nacos-demo-share-2.yml
+             refresh: true
+           - dataId: nacos-demo-share-1.yml
+             refresh: true
+#      server-addr: 127.0.0.1:8848
+#      config:
+#        file-extension: yml
+#        refresh-enabled: true
+        #group
+#        prefix: nacos-demo-group
+#        group: TEST_GROUP
+

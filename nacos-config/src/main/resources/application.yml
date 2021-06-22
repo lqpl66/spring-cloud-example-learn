@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /nacos-api
+  port: 8001
+spring:
+   profiles:
+     active: test
