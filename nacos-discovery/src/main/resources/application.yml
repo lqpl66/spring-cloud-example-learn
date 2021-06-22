@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /nacos-dis
+  port: 8002
+spring:
+   profiles:
+     active: dev
