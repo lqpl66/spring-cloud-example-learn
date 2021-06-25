@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: nacos-dubbo-provider
+  cloud:
+    nacos:
+       config:
+         file-extension: yml
+         refresh-enabled: true
+         shared-configs:
+           - dataId: nacos-demo-share-2.yml
+             refresh: true
+           - dataId: nacos-demo-share-1.yml
+             refresh: true
+logging:
+  level:
+    com.alibaba.nacos.client.config.impl: WARN

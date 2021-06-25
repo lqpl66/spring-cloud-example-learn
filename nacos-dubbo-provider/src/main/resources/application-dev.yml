@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        extension-configs:
+          - dataId: nacos-demo-dev.yml
+            refresh: true
+#         namespace: dc7a678a-dce6-470b-817c-6125933e8e1d
+        server-addr: 127.0.0.1:8848
+      discovery:
+        server-addr: 127.0.0.1:8848

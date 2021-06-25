@@ -1,0 +1,7 @@
+server:
+  servlet:
+    context-path: /nacos-dubbo-api
+  port: 8022
+spring:
+   profiles:
+     active: dev
