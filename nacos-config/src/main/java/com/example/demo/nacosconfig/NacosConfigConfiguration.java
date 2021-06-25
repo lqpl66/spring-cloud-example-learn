@@ -16,6 +16,8 @@
  */
 package com.example.demo.nacosconfig;
 
+import com.alibaba.nacos.api.annotation.NacosProperties;
+import com.alibaba.nacos.api.config.annotation.NacosProperty;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Configuration;
@@ -23,7 +25,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
-@EnableAutoConfiguration
-@Configuration
-public class NacosConfigConfiguration {
-}
+//@EnableAutoConfiguration
+//@Configuration
+//public class NacosConfigConfiguration {
+//}

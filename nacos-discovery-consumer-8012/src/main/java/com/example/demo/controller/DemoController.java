@@ -2,6 +2,7 @@ package com.example.demo.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.example.demo.biz.DemoService;
+import com.example.demo.constant.config.ServerPathConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +16,12 @@ public class DemoController {
     @Autowired
     private DemoService demoService;
 
+    @Autowired
+    ServerPathConfig serverPathConfig;
+
     @GetMapping("/port")
     public String getPort() {
-        return "port:" + port;
+        return "port:" + port+";"+ ServerPathConfig.nacosProviderPath+";"+serverPathConfig.nacosProviderPathValue;
     }
 
     @PostMapping("/name/{name}")

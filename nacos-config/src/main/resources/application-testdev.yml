@@ -6,4 +6,3 @@ spring:
         extension-configs:
           - dataId: nacos-demo-test.yml
             refresh: true
-#         namespace: 9af45f1d-08eb-4239-8ccd-944644be31b

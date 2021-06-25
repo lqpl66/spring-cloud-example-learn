@@ -2,6 +2,17 @@ server:
   servlet:
     context-path: /nacos-api
   port: 8001
+#spring:
+#   profiles:
+#     active: test
 spring:
-   profiles:
-     active: test
+  application:
+    name: nacos-demo
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        file-extension: yml
+        refresh-enabled: true
+        server-addr: 127.0.0.1:8848

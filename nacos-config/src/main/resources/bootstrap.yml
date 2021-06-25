@@ -1,11 +1,16 @@
 spring:
   application:
     name: nacos-demo
+#  profiles:
+#    active: test
   cloud:
     nacos:
        config:
          file-extension: yml
          refresh-enabled: true
+         server-addr: 127.0.0.1:8848
+         extension-configs:
+           - dataId: nacos-config-dev.yml
          shared-configs:
            - dataId: nacos-demo-share-2.yml
              refresh: true

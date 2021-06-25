@@ -9,5 +9,8 @@ import org.springframework.stereotype.Component;
 public class ServerPathConfig {
 
     @Value(value = "${nacos.provider}")
-    private String nacosProviderPath;
+    public  static String nacosProviderPath;
+
+    @Value(value = "${nacos.provider}")
+    public   String nacosProviderPathValue;
 }
